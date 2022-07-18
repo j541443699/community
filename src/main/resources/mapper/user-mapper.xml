@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nowcoder.community.dao.UserMapper"><!-- namespace：全限定名，和某个mapper文件对应起来 -->
+
+    <sql id="insertFields">
+        username, password, salt, email, type, status, activation_code, header_url, create_time
+    </sql>
+    
+    <sql id="selectFields">
+        id, username, password, salt, email, type, status, activation_code, header_url, create_time
+    </sql>
+
+    <select id="selectById" resultType="User">
+        select <include refid="selectFields"></include>
+        from user
+        where id = #{id}
+    </select>
+
+    <select id="selectByName" resultType="User">
+        select <include refid="selectFields"></include>
+        from user
+        where username = #{username}
+    </select>
+
+    <select id="selectByEmail" resultType="User">
+        select <include refid="selectFields"></include>
+        from user
+        where email = #{email}
+    </select>
+
+    <insert id="insertUser" parameterType="User" keyProperty="id"><!-- 设置keyProperty，告诉mybatis User类中与表中自增的ID字段对应的属性，
+    这样给表中增加一个数据的时候，mysql底层生成的新id，mybatis从mysql读取到该id，并加入到insertUser方法的参数user对象中。在给表添加数据的时候，参数user中的id字段原本是空的 -->
+        insert into user (<include refid="insertFields"></include>)
+        values (#{username}, #{password}, #{salt}, #{email}, #{type}, #{status}, #{activationCode}, #{headerUrl}, #{createTime})
+    </insert>
+
+    <update id="updateStatus">
+        update user set status = #{status} where id = #{id}
+    </update>
+
+    <update id="updateHeader">
+        update user set header_url = #{headerUrl} where id = #{id}
+    </update>
+
+    <update id="updatePassword">
+        update user set password = #{password} where id = #{id}
+    </update>
+    
+</mapper>

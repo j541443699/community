@@ -1,0 +1,12 @@
+2022-07-16 20:35:47.271  INFO 20056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 20:35:47.272  INFO 20056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 20:35:47.272  INFO 20056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 20:35:47.292  INFO 20056 --- [restartedMain] o.a.c.c.C.[.[localhost].[/community]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 20:35:47.292  INFO 20056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 211 ms
+2022-07-16 20:35:47.384  INFO 20056 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-16 20:35:47.433  INFO 20056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 20:35:47.447  INFO 20056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/community'
+2022-07-16 20:35:47.452  INFO 20056 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 20:35:48.600  INFO 2644 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-16 20:35:49.344  WARN 2644 --- [main] com.nowcoder.community.LoggerTests       : warn log
+2022-07-16 20:35:49.344 ERROR 2644 --- [main] com.nowcoder.community.LoggerTests       : error log
