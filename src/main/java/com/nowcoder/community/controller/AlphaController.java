@@ -1,14 +1,17 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.service.AlphaService;
+import com.nowcoder.community.util.CommunityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
@@ -18,6 +21,11 @@ import java.util.*;
  * Author:jyq
  * Description:
  */
+
+/**
+ * 用于演示一些小demo
+ */
+
 @Controller
 @RequestMapping("/alpha")
 public class AlphaController {
@@ -37,9 +45,9 @@ public class AlphaController {
         return alphaService.find();
     }
 
-    //之所以没有返回值，是因为通过response对象就可以直接向浏览器输出数据，而不需要返回值
     @RequestMapping("/http")
     //在方法里声明HttpServletRequest和HttpServletResponse两个类型的参数，dispatcherServlet调用该方法时，会自动将从底层就创建好的两个类型的对象传到该方法的参数中
+    //之所以没有返回值，是因为通过response对象就可以直接向浏览器输出数据，而不需要返回值
     public void http(HttpServletRequest request, HttpServletResponse response) {
         //获取请求数据
         System.out.println(request.getMethod());
@@ -63,6 +71,7 @@ public class AlphaController {
         }
     }
 
+    /* SpringMVC用法 */
     // GET请求
     // 法一：/students?current=1&limit=20
     @RequestMapping(path = "/students", method = RequestMethod.GET)
@@ -151,4 +160,54 @@ public class AlphaController {
 
         return list;
     }
+
+    /* Cookie示例 */
+    @RequestMapping(path = "/cookie/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setCookie(HttpServletResponse response) {
+        // 创建cookie
+        Cookie cookie = new Cookie("code", CommunityUtil.generateUUID());
+        // 设置cookie生效的范围，只有设置的路径下客户端才会发cookie
+        cookie.setPath("/community/alpha");
+        // 设置cookie的生存时间，单位是秒
+        cookie.setMaxAge(60 * 10);
+        // 发送cookie
+        response.addCookie(cookie);
+
+        return "set cookie";
+    }
+
+    @RequestMapping(path = "/cookie/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(@CookieValue("code") String code) {//@CookieValue("code")：从cookie中取key为code的值，赋给code参数
+        System.out.println(code);
+        return "get cookie";
+    }
+
+    /* session示例 */
+    @RequestMapping(path = "/session/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setSession(HttpSession session) {// 在setSession方法中声明HttpSession参数，springMVC可以自动帮我们创建session并注入进来
+        session.setAttribute("id", 1);
+        session.setAttribute("name", "Test");
+        return "set session";
+    }
+
+    @RequestMapping(path = "/session/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getSession(HttpSession session) {
+        System.out.println(session.getAttribute("id"));
+        System.out.println(session.getAttribute("name"));
+        return "get session";
+    }
+
+    // ajax示例
+    @RequestMapping(path = "/ajax", method = RequestMethod.POST)
+    @ResponseBody
+    public String testAjax(String name, int age) {
+        System.out.println(name);
+        System.out.println(age);
+        return CommunityUtil.getJSONString(0, "操作成功！");
+    }
+
 }

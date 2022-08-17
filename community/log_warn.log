@@ -1,2 +1,1 @@
-2022-07-16 21:07:57,049 WARN [main] c.n.c.LoggerTests [LoggerTests.java:27] warn log
-2022-07-16 21:22:08,276 WARN [main] c.n.c.LoggerTests [LoggerTests.java:27] warn log
+2022-08-17 14:04:32,035 WARN [http-nio-8080-exec-10] o.a.c.u.SessionIdGeneratorBase [DirectJDKLog.java:173] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [139] milliseconds.
