@@ -84,7 +84,7 @@
 								</button>
 							</div>
 							<div class="toast-body">
-								<span th:if="${topic.equals('comment')}"><!-- 这里的topic从哪传过来的，通过HttpServletRequest类型的request参数传输过来，而不是Model类型的model参数 -->
+								<span th:if="${topic.equals('comment')}"><!-- 这里的topic从哪传过来的，通过HttpServletRequest类型的request参数传输过来，而不是Model类型的model参数。注意，topic前面不能加param，否则会报错 -->
 									用户
 									<i th:utext="${map.user.username}">nowcoder</i>
 									评论了你的<b th:text="${map.entityType==1?'帖子':'回复'}">帖子</b>,

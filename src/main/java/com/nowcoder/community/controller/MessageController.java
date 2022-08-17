@@ -251,6 +251,7 @@ public class MessageController implements CommunityConstant {
         return "/site/notice";
     }
 
+    // 通知详情
     @RequestMapping(path = "/notice/detail/{topic}", method = RequestMethod.GET)
     public String getNoticeDetail(@PathVariable("topic") String topic, Page page, Model model) {
         User user = hostHolder.getUser();
