@@ -1,0 +1,314 @@
+[2022-08-22T02:24:01,172][INFO ][o.e.x.m.MlDailyMaintenanceService] [LAPTOP-IR1SK0IG] triggering scheduled [ML] maintenance tasks
+[2022-08-22T02:24:01,236][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [LAPTOP-IR1SK0IG] Deleting expired data
+[2022-08-22T02:24:01,281][INFO ][o.e.x.m.j.r.UnusedStatsRemover] [LAPTOP-IR1SK0IG] Successfully deleted [0] unused stats documents
+[2022-08-22T02:24:01,282][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [LAPTOP-IR1SK0IG] Completed deletion of expired ML data
+[2022-08-22T02:24:01,283][INFO ][o.e.x.m.MlDailyMaintenanceService] [LAPTOP-IR1SK0IG] Successfully completed [ML] maintenance task: triggerDeleteExpiredDataTask
+[2022-08-22T08:49:54,254][INFO ][o.e.c.m.MetadataCreateIndexService] [LAPTOP-IR1SK0IG] [discusspost] creating index, cause [api], templates [], shards [6]/[3]
+[2022-08-22T09:02:37,047][INFO ][o.e.c.m.MetadataMappingService] [LAPTOP-IR1SK0IG] [discusspost/VCiexhN3TVqfc0WH1MQZsQ] update_mapping [_doc]
+[2022-08-22T09:30:01,196][INFO ][o.e.x.s.SnapshotRetentionTask] [LAPTOP-IR1SK0IG] starting SLM retention snapshot cleanup task
+[2022-08-22T09:30:01,198][INFO ][o.e.x.s.SnapshotRetentionTask] [LAPTOP-IR1SK0IG] there are no repositories to fetch, SLM retention snapshot cleanup task complete
+[2022-08-22T16:01:51,704][INFO ][o.e.x.m.p.NativeController] [LAPTOP-IR1SK0IG] Native controller process has stopped - no new native processes can be started
+[2022-08-22T16:01:51,709][INFO ][o.e.b.Bootstrap          ] [LAPTOP-IR1SK0IG] running graceful exit on windows
+[2022-08-22T16:01:51,713][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] stopping ...
+[2022-08-22T16:01:51,748][INFO ][o.e.x.w.WatcherService   ] [LAPTOP-IR1SK0IG] stopping watch service, reason [shutdown initiated]
+[2022-08-22T16:01:51,754][INFO ][o.e.x.w.WatcherLifeCycleService] [LAPTOP-IR1SK0IG] watcher has stopped and shutdown
+[2022-08-22T16:01:52,046][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] stopped
+[2022-08-22T16:01:52,048][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] closing ...
+[2022-08-22T16:01:52,087][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T16:01:52,088][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T16:01:52,089][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T16:01:52,095][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] closed
+[2022-08-22T18:29:53,800][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] version[7.17.4], pid[24728], build[default/zip/79878662c54c886ae89206c685d9f1051a9d6411/2022-05-18T18:04:20.964345128Z], OS[Windows 10/10.0/amd64], JVM[Amazon.com Inc./OpenJDK 64-Bit Server VM/1.8.0_322/25.322-b06]
+[2022-08-22T18:29:53,801][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] JVM home [D:\developer_tools\jdks\corretto-1.8.0_322\jre], using bundled JDK [false]
+[2022-08-22T18:29:53,802][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,JRE, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Xms1024m, -Xmx1024m, -XX:MaxDirectMemorySize=536870912, -Delasticsearch, -Des.path.home=D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4, -Des.path.conf=D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2022-08-22T18:29:56,777][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [aggs-matrix-stats]
+[2022-08-22T18:29:56,777][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [analysis-common]
+[2022-08-22T18:29:56,778][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [constant-keyword]
+[2022-08-22T18:29:56,778][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [frozen-indices]
+[2022-08-22T18:29:56,779][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [ingest-common]
+[2022-08-22T18:29:56,779][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [ingest-geoip]
+[2022-08-22T18:29:56,780][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [ingest-user-agent]
+[2022-08-22T18:29:56,780][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [kibana]
+[2022-08-22T18:29:56,781][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [lang-expression]
+[2022-08-22T18:29:56,781][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [lang-mustache]
+[2022-08-22T18:29:56,781][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [lang-painless]
+[2022-08-22T18:29:56,782][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [legacy-geo]
+[2022-08-22T18:29:56,782][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [mapper-extras]
+[2022-08-22T18:29:56,782][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [mapper-version]
+[2022-08-22T18:29:56,783][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [parent-join]
+[2022-08-22T18:29:56,783][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [percolator]
+[2022-08-22T18:29:56,783][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [rank-eval]
+[2022-08-22T18:29:56,784][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [reindex]
+[2022-08-22T18:29:56,784][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [repositories-metering-api]
+[2022-08-22T18:29:56,784][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [repository-encrypted]
+[2022-08-22T18:29:56,785][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [repository-url]
+[2022-08-22T18:29:56,785][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [runtime-fields-common]
+[2022-08-22T18:29:56,786][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [search-business-rules]
+[2022-08-22T18:29:56,786][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [searchable-snapshots]
+[2022-08-22T18:29:56,786][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [snapshot-repo-test-kit]
+[2022-08-22T18:29:56,787][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [spatial]
+[2022-08-22T18:29:56,787][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [transform]
+[2022-08-22T18:29:56,787][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [transport-netty4]
+[2022-08-22T18:29:56,788][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [unsigned-long]
+[2022-08-22T18:29:56,789][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [vector-tile]
+[2022-08-22T18:29:56,789][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [vectors]
+[2022-08-22T18:29:56,789][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [wildcard]
+[2022-08-22T18:29:56,790][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-aggregate-metric]
+[2022-08-22T18:29:56,790][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-analytics]
+[2022-08-22T18:29:56,790][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-async]
+[2022-08-22T18:29:56,790][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-async-search]
+[2022-08-22T18:29:56,791][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-autoscaling]
+[2022-08-22T18:29:56,791][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ccr]
+[2022-08-22T18:29:56,792][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-core]
+[2022-08-22T18:29:56,792][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-data-streams]
+[2022-08-22T18:29:56,792][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-deprecation]
+[2022-08-22T18:29:56,793][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-enrich]
+[2022-08-22T18:29:56,793][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-eql]
+[2022-08-22T18:29:56,793][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-fleet]
+[2022-08-22T18:29:56,794][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-graph]
+[2022-08-22T18:29:56,797][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-identity-provider]
+[2022-08-22T18:29:56,797][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ilm]
+[2022-08-22T18:29:56,797][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-logstash]
+[2022-08-22T18:29:56,798][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ml]
+[2022-08-22T18:29:56,798][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-monitoring]
+[2022-08-22T18:29:56,798][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ql]
+[2022-08-22T18:29:56,799][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-rollup]
+[2022-08-22T18:29:56,799][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-security]
+[2022-08-22T18:29:56,799][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-shutdown]
+[2022-08-22T18:29:56,800][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-sql]
+[2022-08-22T18:29:56,800][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-stack]
+[2022-08-22T18:29:56,800][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-text-structure]
+[2022-08-22T18:29:56,801][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-voting-only-node]
+[2022-08-22T18:29:56,801][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-watcher]
+[2022-08-22T18:29:56,802][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded plugin [analysis-ik]
+[2022-08-22T18:29:57,309][INFO ][o.e.e.NodeEnvironment    ] [LAPTOP-IR1SK0IG] using [1] data paths, mounts [[Data (d:)]], net usable_space [75.8gb], net total_space [274.7gb], types [NTFS]
+[2022-08-22T18:29:57,310][INFO ][o.e.e.NodeEnvironment    ] [LAPTOP-IR1SK0IG] heap size [989.8mb], compressed ordinary object pointers [true]
+[2022-08-22T18:29:57,586][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] node name [LAPTOP-IR1SK0IG], node ID [J5BFyJBjSMOJVUmpMqBNOg], cluster name [nowcoder], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2022-08-22T18:30:02,020][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [LAPTOP-IR1SK0IG] [controller/25220] [Main.cc@122] controller (64 bit): Version 7.17.4 (Build 57e42dc012e06b) Copyright (c) 2022 Elasticsearch BV
+[2022-08-22T18:30:02,902][INFO ][o.e.x.s.a.s.FileRolesStore] [LAPTOP-IR1SK0IG] parsed [0] roles from file [D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config\roles.yml]
+[2022-08-22T18:30:03,421][INFO ][o.e.i.g.ConfigDatabases  ] [LAPTOP-IR1SK0IG] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config\ingest-geoip] for changes
+[2022-08-22T18:30:03,424][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T18:30:03,426][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb_COPYRIGHT.txt]
+[2022-08-22T18:30:03,427][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-08-22T18:30:03,428][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb_LICENSE.txt]
+[2022-08-22T18:30:03,429][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T18:30:03,432][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_COPYRIGHT.txt]
+[2022-08-22T18:30:03,433][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-08-22T18:30:03,434][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_LICENSE.txt]
+[2022-08-22T18:30:03,435][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_README.txt]
+[2022-08-22T18:30:03,436][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T18:30:03,437][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb_COPYRIGHT.txt]
+[2022-08-22T18:30:03,438][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-08-22T18:30:03,439][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb_LICENSE.txt]
+[2022-08-22T18:30:03,440][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] initialized database registry, using geoip-databases directory [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg]
+[2022-08-22T18:30:04,027][INFO ][o.e.t.NettyAllocator     ] [LAPTOP-IR1SK0IG] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=989.8mb}]
+[2022-08-22T18:30:04,053][INFO ][o.e.i.r.RecoverySettings ] [LAPTOP-IR1SK0IG] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2022-08-22T18:30:04,091][INFO ][o.e.d.DiscoveryModule    ] [LAPTOP-IR1SK0IG] using discovery type [zen] and seed hosts providers [settings]
+[2022-08-22T18:30:04,523][INFO ][o.e.g.DanglingIndicesState] [LAPTOP-IR1SK0IG] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2022-08-22T18:30:04,977][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] initialized
+[2022-08-22T18:30:04,978][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] starting ...
+[2022-08-22T18:30:05,030][INFO ][o.e.x.s.c.f.PersistentCache] [LAPTOP-IR1SK0IG] persistent cache index loaded
+[2022-08-22T18:30:05,031][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [LAPTOP-IR1SK0IG] deprecation component started
+[2022-08-22T18:30:06,614][INFO ][o.e.t.TransportService   ] [LAPTOP-IR1SK0IG] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2022-08-22T18:30:06,939][WARN ][o.e.b.BootstrapChecks    ] [LAPTOP-IR1SK0IG] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2022-08-22T18:30:06,941][INFO ][o.e.c.c.Coordinator      ] [LAPTOP-IR1SK0IG] cluster UUID [iV-LINEKRlGeQCvjtS-sMg]
+[2022-08-22T18:30:06,951][INFO ][o.e.c.c.ClusterBootstrapService] [LAPTOP-IR1SK0IG] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2022-08-22T18:30:07,044][INFO ][o.e.c.s.MasterService    ] [LAPTOP-IR1SK0IG] elected-as-master ([1] nodes joined)[{LAPTOP-IR1SK0IG}{J5BFyJBjSMOJVUmpMqBNOg}{N-L6OEATR5-CvNZ2N11WLA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 3, version: 84, delta: master node changed {previous [], current [{LAPTOP-IR1SK0IG}{J5BFyJBjSMOJVUmpMqBNOg}{N-L6OEATR5-CvNZ2N11WLA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-08-22T18:30:07,120][INFO ][o.e.c.s.ClusterApplierService] [LAPTOP-IR1SK0IG] master node changed {previous [], current [{LAPTOP-IR1SK0IG}{J5BFyJBjSMOJVUmpMqBNOg}{N-L6OEATR5-CvNZ2N11WLA}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 3, version: 84, reason: Publication{term=3, version=84}
+[2022-08-22T18:30:07,466][INFO ][o.e.l.LicenseService     ] [LAPTOP-IR1SK0IG] license [ea1f7b8d-7204-480d-91ef-77e149a4d5ae] mode [basic] - valid
+[2022-08-22T18:30:07,468][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [LAPTOP-IR1SK0IG] Active license is now [BASIC]; Security is disabled
+[2022-08-22T18:30:07,468][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [LAPTOP-IR1SK0IG] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2022-08-22T18:30:07,475][INFO ][o.e.g.GatewayService     ] [LAPTOP-IR1SK0IG] recovered [5] indices into cluster_state
+[2022-08-22T18:30:07,572][INFO ][o.w.a.d.Dictionary       ] [LAPTOP-IR1SK0IG] try load config from D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config\analysis-ik\IKAnalyzer.cfg.xml
+[2022-08-22T18:30:07,574][INFO ][o.w.a.d.Dictionary       ] [LAPTOP-IR1SK0IG] try load config from D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\plugins\ik\config\IKAnalyzer.cfg.xml
+[2022-08-22T18:30:07,976][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] updating geoip databases
+[2022-08-22T18:30:07,978][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2022-08-22T18:30:08,033][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb.tmp.gz]
+[2022-08-22T18:30:08,033][INFO ][o.e.h.AbstractHttpServerTransport] [LAPTOP-IR1SK0IG] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2022-08-22T18:30:08,035][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] started
+[2022-08-22T18:30:08,036][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-08-22T18:30:08,037][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb.tmp.gz]
+[2022-08-22T18:30:08,253][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T18:30:08,290][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T18:30:08,425][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-IR1SK0IG] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.08.18-000001][0]]]).
+[2022-08-22T18:30:09,008][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T18:30:12,309][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-08-22T18:30:12,317][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] successfully downloaded geoip database [GeoLite2-ASN.mmdb]
+[2022-08-22T18:30:12,420][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T18:30:12,421][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T18:30:39,535][ERROR][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] error updating geoip database [GeoLite2-City.mmdb]
+javax.net.ssl.SSLException: Read timed out
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:324) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:267) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:262) ~[?:?]
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:138) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1395) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1363) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73) ~[?:?]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:957) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284) ~[?:1.8.0_322]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345) ~[?:1.8.0_322]
+	at sun.net.www.MeteredStream.read(MeteredStream.java:134) ~[?:?]
+	at java.io.FilterInputStream.read(FilterInputStream.java:133) ~[?:1.8.0_322]
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3456) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284) ~[?:1.8.0_322]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345) ~[?:1.8.0_322]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.getChunk(GeoIpDownloader.java:245) ~[ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.indexChunks(GeoIpDownloader.java:216) ~[ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.processDatabase(GeoIpDownloader.java:168) [ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.updateDatabases(GeoIpDownloader.java:132) [ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.runDownloader(GeoIpDownloader.java:266) [ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:100) [ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:46) [ingest-geoip-7.17.4.jar:7.17.4]
+	at org.elasticsearch.persistent.NodePersistentTasksExecutor$1.doRun(NodePersistentTasksExecutor.java:42) [elasticsearch-7.17.4.jar:7.17.4]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) [elasticsearch-7.17.4.jar:7.17.4]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) [elasticsearch-7.17.4.jar:7.17.4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_322]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_322]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_322]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_322]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[?:1.8.0_322]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[?:1.8.0_322]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[?:1.8.0_322]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:237) ~[?:?]
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:190) ~[?:?]
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:109) ~[?:?]
+	... 24 more
+[2022-08-22T18:30:42,864][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb.tmp.gz]
+[2022-08-22T18:30:42,874][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] successfully downloaded geoip database [GeoLite2-Country.mmdb]
+[2022-08-22T18:30:42,936][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T18:30:42,937][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T19:12:37,800][INFO ][o.e.x.m.p.NativeController] [LAPTOP-IR1SK0IG] Native controller process has stopped - no new native processes can be started
+[2022-08-22T19:12:37,805][INFO ][o.e.b.Bootstrap          ] [LAPTOP-IR1SK0IG] running graceful exit on windows
+[2022-08-22T19:12:37,806][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] stopping ...
+[2022-08-22T19:12:37,809][INFO ][o.e.x.w.WatcherService   ] [LAPTOP-IR1SK0IG] stopping watch service, reason [shutdown initiated]
+[2022-08-22T19:12:37,810][INFO ][o.e.x.w.WatcherLifeCycleService] [LAPTOP-IR1SK0IG] watcher has stopped and shutdown
+[2022-08-22T19:12:38,275][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] stopped
+[2022-08-22T19:12:38,276][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] closing ...
+[2022-08-22T19:12:38,287][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T19:12:38,287][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T19:12:38,288][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T19:12:38,290][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] closed
+[2022-08-22T19:17:19,682][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] version[7.17.4], pid[25776], build[default/zip/79878662c54c886ae89206c685d9f1051a9d6411/2022-05-18T18:04:20.964345128Z], OS[Windows 10/10.0/amd64], JVM[Amazon.com Inc./OpenJDK 64-Bit Server VM/1.8.0_322/25.322-b06]
+[2022-08-22T19:17:19,684][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] JVM home [D:\developer_tools\jdks\corretto-1.8.0_322\jre], using bundled JDK [false]
+[2022-08-22T19:17:19,684][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,JRE, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Xms1024m, -Xmx1024m, -XX:MaxDirectMemorySize=536870912, -Delasticsearch, -Des.path.home=D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4, -Des.path.conf=D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=true]
+[2022-08-22T19:17:22,481][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [aggs-matrix-stats]
+[2022-08-22T19:17:22,481][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [analysis-common]
+[2022-08-22T19:17:22,482][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [constant-keyword]
+[2022-08-22T19:17:22,482][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [frozen-indices]
+[2022-08-22T19:17:22,482][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [ingest-common]
+[2022-08-22T19:17:22,483][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [ingest-geoip]
+[2022-08-22T19:17:22,483][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [ingest-user-agent]
+[2022-08-22T19:17:22,483][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [kibana]
+[2022-08-22T19:17:22,484][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [lang-expression]
+[2022-08-22T19:17:22,484][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [lang-mustache]
+[2022-08-22T19:17:22,484][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [lang-painless]
+[2022-08-22T19:17:22,485][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [legacy-geo]
+[2022-08-22T19:17:22,485][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [mapper-extras]
+[2022-08-22T19:17:22,485][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [mapper-version]
+[2022-08-22T19:17:22,486][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [parent-join]
+[2022-08-22T19:17:22,487][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [percolator]
+[2022-08-22T19:17:22,487][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [rank-eval]
+[2022-08-22T19:17:22,487][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [reindex]
+[2022-08-22T19:17:22,487][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [repositories-metering-api]
+[2022-08-22T19:17:22,487][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [repository-encrypted]
+[2022-08-22T19:17:22,488][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [repository-url]
+[2022-08-22T19:17:22,488][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [runtime-fields-common]
+[2022-08-22T19:17:22,489][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [search-business-rules]
+[2022-08-22T19:17:22,489][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [searchable-snapshots]
+[2022-08-22T19:17:22,489][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [snapshot-repo-test-kit]
+[2022-08-22T19:17:22,490][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [spatial]
+[2022-08-22T19:17:22,490][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [transform]
+[2022-08-22T19:17:22,490][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [transport-netty4]
+[2022-08-22T19:17:22,491][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [unsigned-long]
+[2022-08-22T19:17:22,491][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [vector-tile]
+[2022-08-22T19:17:22,491][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [vectors]
+[2022-08-22T19:17:22,492][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [wildcard]
+[2022-08-22T19:17:22,492][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-aggregate-metric]
+[2022-08-22T19:17:22,492][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-analytics]
+[2022-08-22T19:17:22,493][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-async]
+[2022-08-22T19:17:22,493][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-async-search]
+[2022-08-22T19:17:22,494][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-autoscaling]
+[2022-08-22T19:17:22,494][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ccr]
+[2022-08-22T19:17:22,494][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-core]
+[2022-08-22T19:17:22,495][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-data-streams]
+[2022-08-22T19:17:22,495][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-deprecation]
+[2022-08-22T19:17:22,495][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-enrich]
+[2022-08-22T19:17:22,496][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-eql]
+[2022-08-22T19:17:22,496][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-fleet]
+[2022-08-22T19:17:22,497][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-graph]
+[2022-08-22T19:17:22,497][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-identity-provider]
+[2022-08-22T19:17:22,497][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ilm]
+[2022-08-22T19:17:22,498][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-logstash]
+[2022-08-22T19:17:22,498][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ml]
+[2022-08-22T19:17:22,498][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-monitoring]
+[2022-08-22T19:17:22,499][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-ql]
+[2022-08-22T19:17:22,499][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-rollup]
+[2022-08-22T19:17:22,500][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-security]
+[2022-08-22T19:17:22,500][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-shutdown]
+[2022-08-22T19:17:22,500][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-sql]
+[2022-08-22T19:17:22,501][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-stack]
+[2022-08-22T19:17:22,501][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-text-structure]
+[2022-08-22T19:17:22,501][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-voting-only-node]
+[2022-08-22T19:17:22,502][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded module [x-pack-watcher]
+[2022-08-22T19:17:22,502][INFO ][o.e.p.PluginsService     ] [LAPTOP-IR1SK0IG] loaded plugin [analysis-ik]
+[2022-08-22T19:17:23,151][INFO ][o.e.e.NodeEnvironment    ] [LAPTOP-IR1SK0IG] using [1] data paths, mounts [[Data (d:)]], net usable_space [74.5gb], net total_space [274.7gb], types [NTFS]
+[2022-08-22T19:17:23,152][INFO ][o.e.e.NodeEnvironment    ] [LAPTOP-IR1SK0IG] heap size [989.8mb], compressed ordinary object pointers [true]
+[2022-08-22T19:17:23,432][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] node name [LAPTOP-IR1SK0IG], node ID [J5BFyJBjSMOJVUmpMqBNOg], cluster name [nowcoder], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2022-08-22T19:17:27,747][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [LAPTOP-IR1SK0IG] [controller/25992] [Main.cc@122] controller (64 bit): Version 7.17.4 (Build 57e42dc012e06b) Copyright (c) 2022 Elasticsearch BV
+[2022-08-22T19:17:28,566][INFO ][o.e.x.s.a.s.FileRolesStore] [LAPTOP-IR1SK0IG] parsed [0] roles from file [D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config\roles.yml]
+[2022-08-22T19:17:29,232][INFO ][o.e.i.g.ConfigDatabases  ] [LAPTOP-IR1SK0IG] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config\ingest-geoip] for changes
+[2022-08-22T19:17:29,236][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T19:17:29,237][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb_COPYRIGHT.txt]
+[2022-08-22T19:17:29,238][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-08-22T19:17:29,239][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb_LICENSE.txt]
+[2022-08-22T19:17:29,240][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T19:17:29,242][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_COPYRIGHT.txt]
+[2022-08-22T19:17:29,243][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-08-22T19:17:29,244][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_LICENSE.txt]
+[2022-08-22T19:17:29,245][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb_README.txt]
+[2022-08-22T19:17:29,246][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T19:17:29,246][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb_COPYRIGHT.txt]
+[2022-08-22T19:17:29,247][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb_elastic-geoip-database-service-agreement-LICENSE.txt]
+[2022-08-22T19:17:29,254][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] deleting stale file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb_LICENSE.txt]
+[2022-08-22T19:17:29,255][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] initialized database registry, using geoip-databases directory [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg]
+[2022-08-22T19:17:29,834][INFO ][o.e.t.NettyAllocator     ] [LAPTOP-IR1SK0IG] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=989.8mb}]
+[2022-08-22T19:17:29,861][INFO ][o.e.i.r.RecoverySettings ] [LAPTOP-IR1SK0IG] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2022-08-22T19:17:29,899][INFO ][o.e.d.DiscoveryModule    ] [LAPTOP-IR1SK0IG] using discovery type [zen] and seed hosts providers [settings]
+[2022-08-22T19:17:30,307][INFO ][o.e.g.DanglingIndicesState] [LAPTOP-IR1SK0IG] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2022-08-22T19:17:30,727][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] initialized
+[2022-08-22T19:17:30,728][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] starting ...
+[2022-08-22T19:17:30,780][INFO ][o.e.x.s.c.f.PersistentCache] [LAPTOP-IR1SK0IG] persistent cache index loaded
+[2022-08-22T19:17:30,781][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [LAPTOP-IR1SK0IG] deprecation component started
+[2022-08-22T19:17:32,335][INFO ][o.e.t.TransportService   ] [LAPTOP-IR1SK0IG] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2022-08-22T19:17:32,688][WARN ][o.e.b.BootstrapChecks    ] [LAPTOP-IR1SK0IG] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2022-08-22T19:17:32,690][INFO ][o.e.c.c.Coordinator      ] [LAPTOP-IR1SK0IG] cluster UUID [iV-LINEKRlGeQCvjtS-sMg]
+[2022-08-22T19:17:32,701][INFO ][o.e.c.c.ClusterBootstrapService] [LAPTOP-IR1SK0IG] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2022-08-22T19:17:32,832][INFO ][o.e.c.s.MasterService    ] [LAPTOP-IR1SK0IG] elected-as-master ([1] nodes joined)[{LAPTOP-IR1SK0IG}{J5BFyJBjSMOJVUmpMqBNOg}{h6BpQweuSZWg-zNf1rhnHw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 4, version: 98, delta: master node changed {previous [], current [{LAPTOP-IR1SK0IG}{J5BFyJBjSMOJVUmpMqBNOg}{h6BpQweuSZWg-zNf1rhnHw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-08-22T19:17:32,892][INFO ][o.e.c.s.ClusterApplierService] [LAPTOP-IR1SK0IG] master node changed {previous [], current [{LAPTOP-IR1SK0IG}{J5BFyJBjSMOJVUmpMqBNOg}{h6BpQweuSZWg-zNf1rhnHw}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 4, version: 98, reason: Publication{term=4, version=98}
+[2022-08-22T19:17:33,227][INFO ][o.e.l.LicenseService     ] [LAPTOP-IR1SK0IG] license [ea1f7b8d-7204-480d-91ef-77e149a4d5ae] mode [basic] - valid
+[2022-08-22T19:17:33,229][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [LAPTOP-IR1SK0IG] Active license is now [BASIC]; Security is disabled
+[2022-08-22T19:17:33,229][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [LAPTOP-IR1SK0IG] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2022-08-22T19:17:33,236][INFO ][o.e.g.GatewayService     ] [LAPTOP-IR1SK0IG] recovered [5] indices into cluster_state
+[2022-08-22T19:17:33,330][INFO ][o.w.a.d.Dictionary       ] [LAPTOP-IR1SK0IG] try load config from D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\config\analysis-ik\IKAnalyzer.cfg.xml
+[2022-08-22T19:17:33,332][INFO ][o.w.a.d.Dictionary       ] [LAPTOP-IR1SK0IG] try load config from D:\data\javaProjects\nowcoderCommunity\elasticsearch-7.17.4\plugins\ik\config\IKAnalyzer.cfg.xml
+[2022-08-22T19:17:33,738][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] updating geoip databases
+[2022-08-22T19:17:33,739][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2022-08-22T19:17:33,753][INFO ][o.e.h.AbstractHttpServerTransport] [LAPTOP-IR1SK0IG] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2022-08-22T19:17:33,754][INFO ][o.e.n.Node               ] [LAPTOP-IR1SK0IG] started
+[2022-08-22T19:17:33,831][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb.tmp.gz]
+[2022-08-22T19:17:33,834][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb.tmp.gz]
+[2022-08-22T19:17:33,836][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb.tmp.gz]
+[2022-08-22T19:17:34,072][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-Country.mmdb]
+[2022-08-22T19:17:34,123][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-ASN.mmdb]
+[2022-08-22T19:17:34,258][INFO ][o.e.c.r.a.AllocationService] [LAPTOP-IR1SK0IG] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2022.08.18-000001][0]]]).
+[2022-08-22T19:17:34,848][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T19:17:34,940][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2022-08-22T19:17:37,861][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb.tmp.gz]
+[2022-08-22T19:17:37,869][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] successfully downloaded geoip database [GeoLite2-City.mmdb]
+[2022-08-22T19:17:37,882][INFO ][o.e.i.g.GeoIpDownloader  ] [LAPTOP-IR1SK0IG] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2022-08-22T19:17:38,649][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [LAPTOP-IR1SK0IG] evicted [0] entries from cache after reloading database [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]
+[2022-08-22T19:17:38,650][INFO ][o.e.i.g.DatabaseNodeService] [LAPTOP-IR1SK0IG] successfully reloaded changed geoip database file [C:\Users\贾雨琦\AppData\Local\Temp\elasticsearch\geoip-databases\J5BFyJBjSMOJVUmpMqBNOg\GeoLite2-City.mmdb]

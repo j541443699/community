@@ -4,7 +4,7 @@
     <!-- 存放的总文件夹 -->
     <property name="LOG_PATH" value="D:/data/javaProjects/nowcoderCommunity/community"/>
     <!-- 该项目的文件夹 -->
-    <property name="APPDIR" value="community"/>
+    <property name="APPDIR" value="data/community"/>
 
     <!-- error file -->
     <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
