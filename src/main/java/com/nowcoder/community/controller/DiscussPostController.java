@@ -161,6 +161,55 @@ public class DiscussPostController implements CommunityConstant {
         return "/site/discuss-detail";
     }
 
+    // 置顶
+    @RequestMapping(path = "/top", method = RequestMethod.POST)// 发起置顶请求需要传输数据，故用post
+    @ResponseBody// 发起异步请求，故用@ResponseBody
+    public String setTop(int id) {// 帖子id
+        discussPostService.updateType(id, 1);
 
+        // 触发发帖事件
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(id);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
+    // 加精
+    @RequestMapping(path = "/wonderful", method = RequestMethod.POST)// 发起加精请求需要传输数据，故用post
+    @ResponseBody// 发起异步请求，故用@ResponseBody
+    public String setWonderful(int id) {// 帖子id
+        discussPostService.updateStatus(id, 1);
+
+        // 触发发帖事件
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(id);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
+
+    // 删除（拉黑）
+    @RequestMapping(path = "/delete", method = RequestMethod.POST)// 发起删除请求需要传输数据，故用post
+    @ResponseBody// 发起异步请求，故用@ResponseBody
+    public String setDelete(int id) {// 帖子id
+        discussPostService.updateStatus(id, 2);
+
+        // 触发删帖事件
+        Event event = new Event()
+                .setTopic(TOPIC_DELETE)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(id);
+        eventProducer.fireEvent(event);
+
+        return CommunityUtil.getJSONString(0);
+    }
 
 }
