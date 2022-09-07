@@ -72,6 +72,13 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
         // 在请求结束时清理用户数据
         hostHolder.clear();
         // 清理security所需的token
-        // SecurityContextHolder.clearContext();
+        // SecurityContextHolder.clearContext();// 这里应该注释掉
+        // 1.因为首先，在浏览器登录页面输入管理员账号密码，然后发起登录请求（这里Filter对该访问路径直接放行）时，
+        // 先进行拦截处理，此时ticket为null，也未生成Authentication，之后在处理登录请求，登录成功同时生成一个新的ticket，之后便进入首页。
+        // 2.然后，在首页中点进某个帖子时又发起一次请求（这里Filter对该访问路径直接放行），进行拦截处理，此时ticket不为null，
+        // 生成Authentication存入SecurityContext，之后在处理查看帖子详情请求，之后进入帖子详情页面。
+        // 3.若没注释掉前面的代码，那么前面处理完查看帖子详情的请求后，SecurityContext会清空，
+        // 那么点击置顶按钮时，spring security会读取SecurityContext，发现没有认证信息，那么就会给浏览器返回“你还没有登录哦！”的提示。
+        // 4.所以，应该注释掉前面的'SecurityContextHolder.clearContext();'。
     }
 }

@@ -20,7 +20,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.elasticsearch.client.elc.ElasticsearchTemplate;
-import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.test.context.ContextConfiguration;
 
@@ -44,11 +43,10 @@ public class ElasticsearchTests {
     @Autowired
     private DiscussPostRepository discussRepository;
 
+    // @Autowired
+    // private ElasticsearchTemplate elasticsearchTemplate;// es6
     @Autowired
-    private RestHighLevelClient restHighLevelClient;
-
-    @Autowired
-    private ElasticsearchTemplate elasticsearchTemplate;
+    private RestHighLevelClient restHighLevelClient;// es7
 
     // 一次插入单条数据
     @Test
@@ -61,15 +59,15 @@ public class ElasticsearchTests {
     // 一次插入多条数据
     @Test
     public void testInsertList() {
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(101, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(102, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(103, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(111, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(112, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(131, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(132, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(133, 0, 100));
-        discussRepository.saveAll(discussMapper.selectDiscussPosts(134, 0, 100));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(101, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(102, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(103, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(111, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(112, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(131, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(132, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(133, 0, 100, 0));
+        discussRepository.saveAll(discussMapper.selectDiscussPosts(134, 0, 100, 0));
     }
 
     // 修改数据
