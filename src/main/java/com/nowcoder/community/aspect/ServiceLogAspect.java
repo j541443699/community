@@ -20,8 +20,8 @@ import java.util.Date;
  * Description:
  */
 
-@Component
-@Aspect
+// @Component
+// @Aspect
 public class ServiceLogAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(ServiceLogAspect.class);
